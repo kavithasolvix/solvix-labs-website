@@ -26,11 +26,11 @@ const siteUrl = "https://solvixlabs.com.au";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Solvix Labs — Enterprise AI & Data Consulting",
+    default: "Solvix Labs — Enterprise AI & Data Consulting Australia",
     template: "%s — Solvix Labs",
   },
   description:
-    "Solvix Labs helps enterprises design, build, secure, govern, and operate production-ready AI systems — RAG, agents, data platforms, and AI governance.",
+    "Solvix Labs is an Australian AI and data consulting boutique helping organisations design, build, secure and govern enterprise AI solutions, RAG systems, AI agents and modern data platforms.",
   keywords: [
     "enterprise AI consulting",
     "AI governance",

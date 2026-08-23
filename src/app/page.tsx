@@ -205,9 +205,10 @@ export default function Home() {
               </h1>
 
               <p className="mt-7 max-w-2xl text-base leading-relaxed text-slate-dark sm:text-lg">
-                Solvix Labs helps organisations design, build and operationalise
-                governed AI platforms, agentic solutions and AI-ready data
-                foundations — inside the customer&apos;s environment.
+                Solvix Labs is an Australian AI &amp; Data consulting boutique helping
+                organisations design, build and operationalise governed AI platforms,
+                agentic solutions and AI-ready data foundations — inside the
+                customer&apos;s environment.
               </p>
 
               <div className="mt-9 flex flex-wrap gap-4">
