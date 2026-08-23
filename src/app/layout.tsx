@@ -21,7 +21,7 @@ const ibmPlexMono = IBM_Plex_Mono({
   weight: ["400", "500"],
 });
 
-const siteUrl = "https://www.solvixlabs.com.au";
+const siteUrl = "https://solvixlabs.com.au";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
