@@ -61,7 +61,7 @@ export async function submitContactForm(
 
     await resend.emails.send({
       from: process.env.CONTACT_FROM_EMAIL ?? "Solvix Labs Site <onboarding@resend.dev>",
-      to: process.env.CONTACT_TO_EMAIL ?? "hello@solvixlabs.com",
+      to: process.env.CONTACT_TO_EMAIL ?? "hello@solvixlabs.com.au",
       replyTo: email,
       subject: `New enquiry from ${name}${company ? ` (${company})` : ""}`,
       text: `Name: ${name}\nEmail: ${email}\nCompany: ${company || "—"}\n\nMessage:\n${message}`,

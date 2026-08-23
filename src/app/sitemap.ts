@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const siteUrl = "https://www.solvixlabs.com";
+const siteUrl = "https://solvixlabs.com.au";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = ["", "/services", "/about", "/contact"];

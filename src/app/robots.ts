@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://www.solvixlabs.com/sitemap.xml",
+    sitemap: "https://www.solvixlabs.com.au/sitemap.xml",
   };
 }
