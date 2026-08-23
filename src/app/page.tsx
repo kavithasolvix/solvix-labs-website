@@ -16,6 +16,16 @@ import {
   Cpu,
   Layers3,
   Search,
+  BriefcaseBusiness,
+  Workflow,
+  Rocket,
+  Scale,
+  HeartPulse,
+  ShoppingBag,
+  GraduationCap,
+  Pickaxe,
+  HardHat,
+  Laptop2,
 } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
@@ -29,40 +39,67 @@ import { Reveal } from "@/components/site/Reveal";
 const services = [
   {
     icon: Network,
-    kicker: "ADVISORY",
-    title: "AI Advisory & Architecture",
-    desc: "Turn business opportunities into an executable AI roadmap, target architecture and secure delivery plan.",
+    kicker: "DISCOVER",
+    title: "AI Use Case Discovery & Prioritisation",
+    desc: "Identify high-value AI opportunities and turn them into a practical, prioritised implementation roadmap.",
+  },
+  {
+    icon: Layers3,
+    kicker: "MODERNISE",
+    title: "Data & AI Platform Modernisation",
+    desc: "Build secure, scalable data and AI foundations across Azure, Databricks, Snowflake and modern cloud platforms.",
   },
   {
     icon: Bot,
-    kicker: "ENGINEERING",
-    title: "AI Engineering",
-    desc: "Production-grade RAG, agents, copilots and workflows connected to enterprise knowledge, APIs and systems.",
+    kicker: "BUILD",
+    title: "GenAI & RAG Solutions",
+    desc: "Build enterprise assistants grounded in organisational knowledge, documents and business data.",
   },
   {
-    icon: Database,
-    kicker: "FOUNDATIONS",
-    title: "AI & Data Platforms",
-    desc: "Governed data and AI foundations across cloud and modern data platforms — designed for security, scale and production.",
+    icon: Workflow,
+    kicker: "AUTOMATE",
+    title: "AI Agents & Workflow Automation",
+    desc: "Design AI agents that retrieve information, use approved business tools and automate controlled workflows.",
+  },
+  {
+    icon: Rocket,
+    kicker: "VALIDATE",
+    title: "POC & MVP Development",
+    desc: "Rapidly design and validate AI solutions before committing to full-scale implementation.",
+  },
+  {
+    icon: Network,
+    kicker: "ARCHITECT",
+    title: "Enterprise AI Architecture",
+    desc: "Define secure, governed and production-ready architectures for scaling AI across the organisation.",
+  },
+  {
+    icon: ShieldCheck,
+    kicker: "GOVERN",
+    title: "AI Governance & Responsible AI",
+    desc: "Establish security, access controls, evaluation, monitoring and responsible-AI guardrails.",
+  },
+  {
+    icon: Gauge,
+    kicker: "OPERATE",
+    title: "Production & Operationalisation",
+    desc: "Move successful prototypes into monitored, scalable and supportable production solutions.",
   },
 ];
 
 const industries = [
-  {
-    icon: Factory,
-    title: "Transport & Logistics",
-    desc: "Operational knowledge, WHS and risk, exception management, planning and intelligent workflow automation.",
-  },
-  {
-    icon: Building2,
-    title: "Utilities & Infrastructure",
-    desc: "Engineering knowledge, field operations, asset intelligence, forecasting, safety and operational decision support.",
-  },
-  {
-    icon: Landmark,
-    title: "Regulated & Data-Intensive Organisations",
-    desc: "Secure knowledge systems, governed RAG, document intelligence, policy assistants and controlled AI workflows.",
-  },
+  { icon: Factory, title: "Transport & Logistics", desc: "Operational copilots, WHS and risk intelligence, fleet and shipment visibility, document automation and workflow agents." },
+  { icon: Building2, title: "Energy & Utilities", desc: "Asset intelligence, field-worker copilots, forecasting, engineering knowledge and operational analytics." },
+  { icon: Landmark, title: "Government & Public Sector", desc: "Policy and document intelligence, citizen-service assistants, case automation and secure enterprise knowledge search." },
+  { icon: Pickaxe, title: "Mining & Resources", desc: "Safety copilots, maintenance intelligence, operational knowledge, compliance automation and predictive analytics." },
+  { icon: Cpu, title: "Manufacturing", desc: "Quality intelligence, predictive maintenance, SOP assistants, production analytics and computer vision." },
+  { icon: Scale, title: "Financial Services & Insurance", desc: "Document processing, compliance assistants, claims automation, fraud and risk analytics, and enterprise knowledge." },
+  { icon: HeartPulse, title: "Healthcare", desc: "Knowledge assistants, administrative automation, document intelligence and workforce analytics." },
+  { icon: ShoppingBag, title: "Retail & Consumer", desc: "Customer intelligence, demand forecasting, product assistants, personalisation and supply-chain analytics." },
+  { icon: HardHat, title: "Construction & Engineering", desc: "Project-document intelligence, safety and compliance agents, engineering knowledge search and project risk analytics." },
+  { icon: BriefcaseBusiness, title: "Professional Services", desc: "Enterprise knowledge assistants, proposal automation, document intelligence and workflow agents." },
+  { icon: GraduationCap, title: "Education", desc: "Student-service assistants, knowledge search, administrative automation and learning analytics." },
+  { icon: Laptop2, title: "Technology & SaaS", desc: "AI-enabled applications, agentic workflows, AI platform architecture, RAG, evaluation and observability." },
 ];
 
 const engineeringPrinciples = [
@@ -180,8 +217,8 @@ export default function Home() {
                   variant="inverse"
                   className="shadow-[0_0_44px_-12px_var(--signal)]"
                 >
-                  <Link href="/contact">
-                    Discuss an opportunity
+                  <Link href="/consultation">
+                    Book a 30-Minute Consultation
                   </Link>
                 </Button>
 
@@ -367,17 +404,16 @@ export default function Home() {
 
           <div className="grid gap-5 md:grid-cols-[1fr_.7fr] md:items-end">
             <h2 className="max-w-2xl font-display text-3xl font-medium sm:text-4xl">
-              Three focused capabilities. One path from opportunity to production.
+              From AI opportunity to production — with clear delivery outcomes.
             </h2>
 
             <p className="leading-relaxed text-slate">
-              Architecture, engineering and data foundations brought together
-              without turning every engagement into a large transformation programme.
+              Clear, focused services that take an organisation from opportunity discovery through architecture, build, governance and production.
             </p>
           </div>
         </Reveal>
 
-        <div className="mt-12 grid gap-4 lg:grid-cols-3">
+        <div className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           {services.map((service, index) => (
             <Reveal
               key={service.title}
@@ -497,21 +533,19 @@ export default function Home() {
       >
         <Reveal>
           <div className="mono-label mb-3 text-xs text-slate">
-            Domain-led engineering
+            Industries We Support
           </div>
 
           <h2 className="max-w-3xl font-display text-3xl font-medium sm:text-4xl">
-            AI architecture shaped around the operating environment.
+            Data & AI applied to industry-specific business problems.
           </h2>
 
-          <p className="mt-5 max-w-2xl leading-relaxed text-slate">
-            Transport, utilities and regulated organisations are examples of
-            environments where domain context materially changes how AI should
-            be designed, secured and operated.
+          <p className="mt-5 max-w-3xl leading-relaxed text-slate">
+            We apply modern Data & AI capabilities across industries, combining enterprise architecture, data platforms, GenAI and agentic AI to solve practical operational challenges.
           </p>
         </Reveal>
 
-        <div className="mt-12 grid gap-5 md:grid-cols-3">
+        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
 
           {industries.map((industry, index) => (
             <Reveal
@@ -554,8 +588,7 @@ export default function Home() {
               Domain-led, not domain-limited.
             </strong>{" "}
 
-            Solvix adapts architecture and technology to the organisation,
-            business problem and operating environment.
+            Solvix adapts architecture and technology to the organisation, business problem and operating environment — without claiming the same domain depth in every sector.
 
           </p>
         </div>
@@ -686,12 +719,11 @@ export default function Home() {
                 </div>
 
                 <h2 className="max-w-2xl font-display text-3xl font-medium sm:text-4xl">
-                  Have an AI or data opportunity that needs a credible path to production?
+                  Have a Data or AI challenge? Start with a free 30-minute AI & Data consultation.
                 </h2>
 
                 <p className="mt-5 max-w-xl leading-relaxed text-slate">
-                  Start with a focused architecture, use-case or
-                  production-readiness conversation.
+                  Discuss the business problem, identify the right AI or data approach, assess feasibility and leave with clear next steps.
                 </p>
               </div>
 
@@ -700,8 +732,8 @@ export default function Home() {
                 size="lg"
                 variant="primary"
               >
-                <Link href="/contact">
-                  Talk to Solvix Labs
+                <Link href="/consultation">
+                  Book a 30-Minute Consultation
                 </Link>
               </Button>
 

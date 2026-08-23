@@ -70,8 +70,8 @@ export function Header() {
 
         {/* CTA */}
         <Button asChild size="sm" variant="inverse">
-          <Link href="/contact">
-            Start a conversation
+          <Link href="/consultation">
+            30-min consultation
           </Link>
         </Button>
       </div>

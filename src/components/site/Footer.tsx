@@ -98,25 +98,25 @@ export function Footer() {
             </div>
 
             <a
-              href="mailto:hello@solvixlabs.com"
+              href="mailto:solvix.ai.consulting@gmail.com"
               className="flex items-center gap-3 text-sm text-paper/75 transition-colors hover:text-signal"
             >
               <Mail className="h-4 w-4 text-verified" />
-              solvix.ai.consulting@gmail.com
+              hello@solvixlabs.com.au
             </a>
 
             <Link
-              href="/contact"
+              href="/consultation"
               className="mt-8 block border border-line-dark bg-ink-raised p-5 transition-colors hover:border-signal/40"
             >
               <div className="flex items-center justify-between gap-4">
                 <div>
                   <div className="font-display text-sm font-medium text-paper">
-                    Start a conversation
+                    Free 30-Minute AI & Data Consultation
                   </div>
 
                   <div className="mt-2 text-xs leading-5 text-slate-dark">
-                    Discuss your AI, data or platform opportunity.
+                    Discuss your Data & AI challenge and identify practical next steps.
                   </div>
                 </div>
 
