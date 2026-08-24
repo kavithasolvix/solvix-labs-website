@@ -64,6 +64,9 @@ const orgJsonLd = {
   description:
     "Enterprise AI and data consulting: design, build, secure, govern, and operate production AI systems including RAG, agents, and data platforms.",
   areaServed: "Worldwide",
+  sameAs: [
+    "https://www.linkedin.com/company/solvix-labs-australia/",
+  ],
   knowsAbout: [
     "Retrieval-Augmented Generation",
     "AI Agents",
