@@ -1,6 +1,6 @@
 import { SolvixLogo } from "@/components/site/SolvixLogo";
 import Link from "next/link";
-import { Mail, MapPin, ArrowUpRight } from "lucide-react";
+import { Mail, MapPin, ArrowUpRight, Linkedin } from "lucide-react";
 
 export function Footer() {
   return (
@@ -98,11 +98,21 @@ export function Footer() {
             </div>
 
             <a
-              href="mailto:solvix.ai.consulting@gmail.com"
+              href="mailto:hello@solvixlabs.com.au"
               className="flex items-center gap-3 text-sm text-paper/75 transition-colors hover:text-signal"
             >
               <Mail className="h-4 w-4 text-verified" />
               hello@solvixlabs.com.au
+            </a>
+
+            <a
+              href="https://www.linkedin.com/company/solvix-labs-australia/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-3 flex items-center gap-3 text-sm text-paper/75 transition-colors hover:text-signal"
+            >
+              <Linkedin className="h-4 w-4 text-verified" />
+              LinkedIn
             </a>
 
             <Link
@@ -143,7 +153,7 @@ export function Footer() {
             </Link>
 
             <span className="mono-label text-[10px] text-signal">
-              Systems built to be governed
+              Enterprise AI, built to be governed
             </span>
           </div>
         </div>
