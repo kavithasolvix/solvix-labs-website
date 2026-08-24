@@ -1,13 +1,12 @@
 import { SolvixLogo } from "@/components/site/SolvixLogo";
 import Link from "next/link";
-import { Mail, MapPin, ArrowUpRight, Linkedin } from "lucide-react";
+import { Mail, MapPin, ArrowUpRight } from "lucide-react";
 
 export function Footer() {
   return (
     <footer className="mt-32 border-t border-line-dark bg-ink text-paper">
       <div className="mx-auto max-w-6xl px-6 py-16">
         <div className="grid gap-12 md:grid-cols-12">
-
           {/* Brand */}
           <div className="md:col-span-5">
             <SolvixLogo />
@@ -111,7 +110,7 @@ export function Footer() {
               rel="noopener noreferrer"
               className="mt-3 flex items-center gap-3 text-sm text-paper/75 transition-colors hover:text-signal"
             >
-              <Linkedin className="h-4 w-4 text-verified" />
+              <ArrowUpRight className="h-4 w-4 text-verified" />
               LinkedIn
             </a>
 
@@ -126,7 +125,8 @@ export function Footer() {
                   </div>
 
                   <div className="mt-2 text-xs leading-5 text-slate-dark">
-                    Discuss your Data & AI challenge and identify practical next steps.
+                    Discuss your Data & AI challenge and identify practical next
+                    steps.
                   </div>
                 </div>
 
